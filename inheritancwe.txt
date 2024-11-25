@@ -1,0 +1,112 @@
+#include <iostream>
+using namespace std;
+
+
+class svkm{
+    public:
+    void student(){
+        cout<<"sushant pawar"<<endl;
+    }
+};
+class info:public svkm{
+    public:
+    void data(){
+        cout<<"collage - svkm"<<endl;
+    }
+};
+int main(){
+    info s;
+    s.student();
+    s.data();
+}
+
+
+
+********************************************************************
+#include <iostream>
+using namespace std;
+class collage{
+    public:
+    void stu(){
+        cout<<"susyhant pawar|\n";
+    }
+};
+class roll{
+    public:
+    void ro(){
+        cout<<"49"<<endl;
+        
+    }
+};
+class svkm:public collage,public roll{
+    public:
+    void institute(){
+        cout<<"svkm"<<endl;
+    }
+};
+int main(){
+    svkm s;
+    s.stu();
+    s.ro();
+    s.institute();
+}
+*****************************************************multilevel
+#include <iostream>
+using namespace std;
+
+class bmw{
+    public:
+    void name(){
+        cout<<"bmw 730d"<<endl;
+    }
+    
+};
+class audi:public bmw{
+    public:
+    void type(){
+        cout<<"suv"<<endl;
+        
+    }
+};
+class premium:public audi{
+    public:
+     void merc(){
+         cout<<" e calss"<<endl;
+     }
+};
+int main(){
+    premium s;
+    s.name();
+    s.type();
+    s.merc();
+}
+****************************hira
+#include <iostream>
+using namespace std;
+
+class mate{
+    public :
+    void study(){
+        cout<<"statonary"<<endl;
+    }
+};
+class pen:public mate{
+    public:
+    void stu(){
+        cout<<"*********"<<endl;
+    }
+};
+class pencil:public mate{
+        public:
+    void book(){
+        cout<<"ajfhhdfa"<<endl;
+        
+    }
+};
+int main(){
+    pen p;
+    pencil q;
+    
+    p .study();
+    q.study();
+}
